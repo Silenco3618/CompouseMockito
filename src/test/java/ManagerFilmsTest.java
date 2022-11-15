@@ -76,7 +76,7 @@ public class ManagerFilmsTest {
     }
     @Test
     public void addFilmsAboveLimit() {
-        ManagerFilms manager = new ManagerFilms(10);
+
 
         manager.addFilms("Film 1");
         manager.addFilms("Film 2");
