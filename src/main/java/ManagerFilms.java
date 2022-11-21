@@ -1,13 +1,15 @@
 public class ManagerFilms {
     private String[] films = new String[0];
     private int limit;
+
     public ManagerFilms() {
         this.limit = 10;
     }
-    public ManagerFilms(int limit) {
 
+    public ManagerFilms(int limit) {
         this.limit = limit;
     }
+
     public void addFilms(String film) {
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
@@ -16,10 +18,11 @@ public class ManagerFilms {
         tmp[tmp.length - 1] = film;
         films = tmp;
     }
-    public String[] findAll() {
 
+    public String[] findAll() {
         return films;
     }
+
     public String[] findLast() {
         int allLength;
         if (films.length < limit) {
